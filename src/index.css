@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: 6, 18, 24;
+    --secondary: 28, 127, 158;
+    --header: 238, 251, 253;
+    --body: 213, 243, 248;
+
+    background-color: rgba(var(--primary));
+}
+
+html {
+    scrollbar-color: rgba(var(--primary));
+}
+
+body {
+    @apply font-poppins;
+}
+
+.btn {
+    @apply flex flex-row items-center justify-center rounded-lg bg-secondary text-2xl font-bold text-body transition-transform duration-300 hover:translate-y-[-4px];
+}
+
+.tag {
+    @apply flex rounded-3xl bg-secondary px-3 py-1 text-base font-light text-body;
+}
