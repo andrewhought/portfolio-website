@@ -15,10 +15,12 @@
 
 html {
     scrollbar-color: rgba(var(--primary));
+    min-width: 430px;
 }
 
 body {
     @apply font-poppins;
+    min-width: 430px;
 }
 
 .popover-arrow {

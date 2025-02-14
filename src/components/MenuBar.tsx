@@ -3,7 +3,7 @@ import { ReactElement } from "react";
 
 export default function MenuBar(): ReactElement {
     return (
-        <div className="fixed left-0 right-0 top-4 mx-12 md:mx-24 lg:mx-48 xl:mx-72">
+        <div className="fixed min-w-[321.5px] left-0 right-0 top-4 mx-12 md:mx-24 lg:mx-48 xl:mx-72">
             <Menubar.Root className="flex w-full max-w-full justify-evenly rounded-lg bg-secondary px-8 py-3 opacity-90">
                 <Menubar.Menu>
                     <Menubar.Trigger
