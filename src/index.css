@@ -21,10 +21,14 @@ body {
     @apply font-poppins;
 }
 
+.popover-arrow {
+    fill: var(--header);
+}
+
 .btn {
-    @apply flex flex-row items-center justify-center rounded-lg bg-secondary text-2xl font-bold text-body transition-transform duration-300 hover:translate-y-[-4px];
+    @apply flex flex-row items-center justify-center rounded-lg bg-secondary text-lg font-bold text-body transition-transform duration-300 hover:translate-y-[-4px];
 }
 
 .tag {
-    @apply flex rounded-3xl bg-secondary px-3 py-1 text-base font-light text-body;
+    @apply inline-flex rounded-3xl bg-secondary px-3 py-1 text-xs font-light text-body;
 }

@@ -4,7 +4,7 @@ interface ButtonProps {
     title?: string;
     icon?: ReactElement;
 
-    onClick(): void;
+    onClick?(): void;
 }
 
 export function Button(props: ButtonProps): ReactElement {
@@ -12,8 +12,8 @@ export function Button(props: ButtonProps): ReactElement {
 
     return (
         <button
+            className={`btn ${title ? "px-3 py-2" : "p-2"} sm:text-xl md:text-2xl`}
             onClick={onClick}
-            className={`btn ${title ? "px-3 py-2" : "p-2"}`}
         >
             {icon ? <div className={title ? "mr-2" : ""}>{icon}</div> : null}
             {title ? <span>{title}</span> : null}
