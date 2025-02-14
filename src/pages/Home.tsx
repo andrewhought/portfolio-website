@@ -1,5 +1,7 @@
 import { ReactElement } from "react";
 
+import pfp from "../../public/pfp.jpeg"
+
 export default function Home(): ReactElement {
     return (
         <div
@@ -9,7 +11,7 @@ export default function Home(): ReactElement {
             <div className="flex items-center justify-center">
                 <img
                     className="mb-12 h-80 w-80 rounded-full object-cover"
-                    src="./src/assets/pfp.jpeg"
+                    src={pfp}
                 />
             </div>
             <span className="flex whitespace-nowrap text-3xl font-extrabold text-header sm:text-4xl md:text-5xl">
