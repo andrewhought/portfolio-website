@@ -15,12 +15,12 @@
 
 html {
     scrollbar-color: rgba(var(--primary));
-    min-width: 430px;
+    min-width: 490px;
 }
 
 body {
     @apply font-poppins;
-    min-width: 430px;
+    min-width: 490px;
 }
 
 .popover-arrow {
@@ -33,4 +33,8 @@ body {
 
 .tag {
     @apply inline-flex rounded-3xl bg-secondary px-3 py-1 text-xs font-light text-body;
+}
+
+.contact-form {
+    @apply mx-auto mt-8 flex w-96 items-center justify-center rounded-lg bg-secondary p-6 text-primary;
 }

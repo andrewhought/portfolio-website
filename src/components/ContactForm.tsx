@@ -12,9 +12,9 @@ export default function ContactForm(): ReactElement {
     };
 
     return (
-        <div className="mx-auto mt-8 flex w-full max-w-xl flex-row items-center justify-center rounded-lg bg-secondary p-6 text-primary sm:w-auto">
+        <div className="contact-form flex-row">
             {isSubmitted ? (
-                <div className="mx-auto mt-8 flex w-full max-w-xl flex-col items-center justify-center rounded-lg bg-secondary p-6 text-primary sm:w-auto">
+                <div className="contact-form flex-col">
                     <IoIosCheckmarkCircle size={109} />
                     <div className="mx-[30.5px] mt-[144.5px]">
                         <Button
@@ -33,7 +33,7 @@ export default function ContactForm(): ReactElement {
                         </div>
                         <Form.Control asChild>
                             <input
-                                className="flex w-full min-w-0 items-center rounded-md bg-body px-2 py-4"
+                                className="box-border flex w-80 min-w-0 items-center rounded-md bg-body px-2 py-4"
                                 type="email"
                                 placeholder="Enter an email"
                                 required
@@ -48,7 +48,7 @@ export default function ContactForm(): ReactElement {
                         </div>
                         <Form.Control asChild>
                             <input
-                                className="flex w-full min-w-0 items-center rounded-md bg-body px-2 py-4"
+                                className="flex w-80 min-w-0 items-center rounded-md bg-body px-2 py-4"
                                 type="email"
                                 placeholder="Enter a phone number"
                                 required
@@ -63,7 +63,7 @@ export default function ContactForm(): ReactElement {
                         </div>
                         <Form.Control asChild>
                             <textarea
-                                className="flex w-full min-w-0 items-center rounded-md bg-body px-2 py-4"
+                                className="flex h-32 w-80 min-w-0 resize-none items-center rounded-md bg-body px-2 py-4"
                                 required
                                 placeholder="Leave a message"
                             />

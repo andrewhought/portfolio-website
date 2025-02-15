@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-import pfp from "../../public/pfp.jpeg"
+import pfp from "../../public/pfp.jpeg";
 
 export default function Home(): ReactElement {
     return (
