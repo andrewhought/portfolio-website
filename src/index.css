@@ -36,5 +36,5 @@ body {
 }
 
 .contact-form {
-    @apply mx-auto mt-8 flex w-96 items-center justify-center rounded-lg bg-secondary p-6 text-primary;
+    @apply mx-auto flex h-[476px] w-96 items-center justify-center rounded-lg bg-secondary p-6 text-primary;
 }
